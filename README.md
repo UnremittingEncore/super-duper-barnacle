@@ -1,3 +1,7 @@
+# Description
+
+This is a basic flutter application which demonstrates trigonometric and log implementions. Also the implementation layer is seperated from the logical layer
+
 # my_flutter_app
 
 A new Flutter application.
