@@ -11,7 +11,7 @@ class Logic {
     return tan(radians);
   }
   double Log(double input) {
-    return log(input)/2.303;
+    return log(input)/2.303; // dividing by 2.303 as  the function give log value for base e
   }
 
 }
