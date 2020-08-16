@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_flutter_app/Trig_N_Log_Screen.dart';
+import 'package:my_flutter_app/UserInformation.dart';
 
 void main() {
   runApp(MainScreen());
@@ -39,6 +40,14 @@ class FirstScreen extends StatelessWidget{
                 navigateToCalculatorScreen(context);
               },
             ),
+            RaisedButton(
+              color: Colors.black,
+              textColor: Colors.tealAccent,
+              child: Text('Click to See Sqlite Demonstration'),
+              onPressed:(){
+                navigateToSqliteScreen(context);
+              },
+            ),
 
 
           ],
@@ -53,7 +62,9 @@ class FirstScreen extends StatelessWidget{
   void navigateToCalculatorScreen(context) async{
     Navigator.push(context, MaterialPageRoute(builder: (context) => CalculatorApp() ,));
   }
-
+  void navigateToSqliteScreen(context) async{
+    Navigator.push(context, MaterialPageRoute(builder: (context) => UserInformation() ,));
+  }
 
 }
 
